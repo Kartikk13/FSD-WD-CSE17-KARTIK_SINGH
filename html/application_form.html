@@ -11,12 +11,52 @@
     <form action="#" method="post">
         <table>
             <tr>
-                <td>FULL NAME</td>
+                <td>*FULL NAME</td>
                 <td><input type="text" name="fullname" placeholder="enter full name" required></td>
             </tr>
             <tr>
-                <td>ENTER EMAIL</td>
+                <td>*ENTER EMAIL</td>
                 <td><input type="email" name="email" placeholder="enter your email" required></td>
+            </tr>
+            <tr>
+                <td>*ENTER AGE</td>
+                <td><input type="number" name="age" placeholder="enter age" required></td>
+            </tr>
+            <tr>
+                <td>*Which option describes your current role?</td>
+                <td>
+                    <select name="role">
+                        <option value="">Working Proffesional</option>
+                        <option value="">Freelancer</option>
+                        <option value="">Unemployed</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>*Would you like to list reference?</td>
+                <td>
+                    <input type="radio" name="reference" value="yes" required> YES
+                    <input type="radio" name="reference" value="yes" > NO
+                </td>
+            </tr>
+            <tr>
+                <td>Which position would you like to apply for?</td>
+                <td>
+                    <select name="position">
+                        <option value="">Select an option</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>which programming language do you know?</td>
+                <td>
+                    <input type="checkbox" name="lang" value="Java">Java <br>
+                    <input type="checkbox" name="lang" value="Java">P <br>
+                    <input type="checkbox" name="lang" value="Java">Java <br>
+                    <input type="checkbox" name="lang" value="Java">Java <br>
+                    <input type="checkbox" name="lang" value="Java">Java <br>
+                </td>
             </tr>
         </table>
     </form>

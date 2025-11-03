@@ -1,0 +1,7 @@
+body{
+    height: 150px;
+    background-image: url("abes.jfif");
+
+    background-image: radial-gradient( red, blue, green);
+    background-repeat: no-repeat;
+}

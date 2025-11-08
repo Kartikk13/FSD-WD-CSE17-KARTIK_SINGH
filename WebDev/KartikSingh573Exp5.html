@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="auth.js" defer></script>
 </head>
 <body>
     <thead> Experiment 5</thead>
@@ -29,10 +30,10 @@
                     CIVIL <br>
                 </td>
                 <td rowspan="4" colspan="4" align="center">
-                    <form action="#" method="post">
-                        <br><b>FIRST NAME:</b> <input type="text" name="FirstName" placeholder="enter first name" required> &emsp13;
-                        <b>LAST NAME:</b> <input type="text" name="LastName" placeholder="enter last name" required><br><br>
-                        <b>PASSWORD:</b> <input type="password" name="Password" required> <br><br>
+                    <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+                        <br><b>FIRST NAME:</b> <input type="text" name="FirstName" placeholder="enter first name"> &emsp13;
+                        <b>LAST NAME:</b> <input type="text" name="LastName" placeholder="enter last name"><br><br>
+                        <b>PASSWORD:</b> <input type="password" name="Password"> <br><br>
                         <b>EMAIL ID:</b> <input type="email" name="Email" placeholder="enter email" required><br><br>
                         <b>PHONE NO.:</b> <input type="text" name="country-code" value="+91" readonly size="1">
                                    <input type="tel" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required><br><br>

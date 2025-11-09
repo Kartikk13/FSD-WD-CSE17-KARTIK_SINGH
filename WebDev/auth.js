@@ -26,3 +26,38 @@ function validateForm() {
     return false;
   }
 }
+const slides = document.querySelectorAll('.slide');
+const prevbtn = document.querySelector('.prev');
+const nextbtn = document.querySelector('.next');
+let index=0;
+const total = slides.length;
+let slideinterval;
+function showslide(n){
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[n].classList.add('active');
+}
+function nextslide(){
+  index = (index+1)%total;
+  showslide(index);
+}
+function prevslide(){
+  index = (index-1+total)%total;
+  showslide(index);
+}
+function startslideshow(){
+  slideinterval = setInterval(nextslide, 5000);
+}
+function stopslideshow(){
+  clearInterval(slideinterval);
+}
+nextbtn.addEventListener('click', ()=>{
+  stopslideshow();
+  nextslide();
+  startslideshow();
+});
+prevbtn.addEventListener('click', ()=>{
+  stopslideshow();
+  prevslide();
+  startslideshow();
+});
+startslideshow();

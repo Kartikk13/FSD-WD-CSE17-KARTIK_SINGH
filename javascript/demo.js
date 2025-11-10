@@ -1,0 +1,1 @@
+document.write("HOYAAA JS by ext file");
